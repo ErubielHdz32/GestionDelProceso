@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0f172a">
     <title>Prueba Gestión del Proceso</title>
 
     <!-- CSS -->
@@ -12,6 +14,16 @@
 
     <h1 id="titulo">Prueba Materia Gestión Del Proceso</h1>
     <button id="btn">Cambiar texto</button>
+ 
+    <script>
+        if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('./sw.js')
+            .then(reg => console.log('Service Worker registrado', reg))
+            .catch(err => console.log('Fallo de registro:', err));
+        });
+        }
+    </script>
 
     <!-- JS -->
     <script src="script.js"></script>

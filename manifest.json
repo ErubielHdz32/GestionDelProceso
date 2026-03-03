@@ -1,0 +1,14 @@
+{
+  "name": "Prueba Materia Gestión del Proceso",
+  "short_name": "Gestión",
+  "description": "Aplicación web interactiva para la materia Gestión del Proceso.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "id": "./",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "orientation": "portrait",
+  "lang": "es-MX",
+  "dir": "ltr"
+}
